@@ -4,7 +4,7 @@ object TestFixtures {
 
 // TODO comment these fixtures back in after adding the required case classes
 
-//  val simpleEllipse = Ellipse(50, 30)
+  val simpleEllipse = Ellipse(100, 60)
 
   val simpleRectangle = Rectangle(80, 120)
 
