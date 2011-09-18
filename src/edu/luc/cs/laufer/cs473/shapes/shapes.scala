@@ -12,7 +12,10 @@ case class Location(x: Int, y: Int, shape: Shape) extends Shape {
     throw new IllegalArgumentException("null shape in location")
   }
 }
-case class Group(shapes: Shape*) extends Shape
+case class Group(shape: Shape*) extends Shape{
+//  val shapeList=shape
+//  println(shapeList.toString())
+}
 
 
 
