@@ -45,13 +45,15 @@ object BoundingBox {
         
         val hmax=Math.max(b.y+b.shape.asInstanceOf[Rectangle].height,a.y+a.shape.asInstanceOf[Rectangle].height)
         val hmin=Math.min(b.y,a.y)
-        val height=(hmax-hmin) 
+        println("hmax"+hmax+" hmin "+hmin)
+        val height=(hmax-hmin)
+        
         println("wmin: "+wmin+"hmin"+hmin)
         println("Width: "+width)
         println("Height: "+height)
         println("a: "+a)
         
-        Location(hmin,wmin,Rectangle(width,height))
+        Location(a.x,a.y,(Rectangle(width,height)))
         
         })
       
