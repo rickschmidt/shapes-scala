@@ -5,6 +5,7 @@ object TestFixtures {
 // TODO comment these fixtures back in after adding the required case classes
 
   val simpleEllipse = Ellipse(50, 30)
+  
 //new Location(-50,-30,Rectangle(100,60))
   val simpleRectangle = Rectangle(80, 120)
 //new Location(0, 0, s)

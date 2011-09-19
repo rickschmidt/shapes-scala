@@ -24,8 +24,16 @@ class TestBoundingBox extends FunSuite {
 	  assert(width === r.width)
 	  assert(height === r.height)
     }
+    
+    
   }
-
+def testSize(description: String, s:Shape,num:Int)={
+      test(description){
+        val b=size(s)
+        
+        assert(num===b)
+      }
+    }
 // TODO comment these tests back in
 
 
@@ -36,4 +44,12 @@ class TestBoundingBox extends FunSuite {
   testBoundingBox("simple group", simpleGroup, 150, 70, 350, 280)
   testBoundingBox("complex group", complexGroup, 30, 60, 470, 320)
 
+  //Size
+  testSize("simple ellipse size",simpleEllipse,1)
+  testSize("simple rectangle size", simpleRectangle, 1)
+  testSize("simple location size", simpleLocation, 1)
+  testSize("basic group size", basicGroup, 2)
+  testSize("simple group size", simpleGroup, 2)
+  testSize("complex group size", complexGroup,5)
 }
+
