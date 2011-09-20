@@ -12,13 +12,10 @@ class TestBoundingBox extends FunSuite {
 
   def testBoundingBox(description: String, s: Shape, x: Int, y: Int, width: Int, height: Int) = {
     test(description) {
-      println("----------------------------------------")
+      
 	  val b = boundingBox(s)
 	  val r = b.shape.asInstanceOf[Rectangle]
-	  println("Bx: "+b.x)
-	  println("By: "+b.y)
-	  println("rwidth: "+r.width)
-	  println("rheight: "+r.height)
+	  
 	  assert(x === b.x)
 	  assert(y === b.y)
 	  assert(width === r.width)

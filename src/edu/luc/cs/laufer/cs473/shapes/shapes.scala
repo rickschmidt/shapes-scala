@@ -4,7 +4,7 @@ abstract class Shape
 
 case class Rectangle(width: Int, height: Int) extends Shape
 case class Ellipse(width: Int, height: Int) extends Shape{
-//	 val e=Ellipse(width,height)
+
 	 
 }
 case class Location(x: Int, y: Int, shape: Shape) extends Shape {
@@ -13,8 +13,7 @@ case class Location(x: Int, y: Int, shape: Shape) extends Shape {
   }
 }
 case class Group(shape: Shape*) extends Shape{
-//  val shapeList=shape
-//  println(shapeList.toString())
+
 }
 
 
